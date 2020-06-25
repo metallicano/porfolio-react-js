@@ -211,7 +211,7 @@ export default function Hero() {
 
 
     return (
-        <HeroStyled>
+        <HeroStyled id="home">
             <section className={banner===false?"banner": "banner banner-active"} id="sec">
                 <header>
                     
@@ -219,14 +219,14 @@ export default function Hero() {
                     <div className="toggle" onClick={()=>dispatch(changeBanner())}></div>
                 </header>
                 <div className="content">
-                    <h2>hello word,<br/>I'm <span>Daniel Giraldo</span></h2>
+                    <h2>Hola,<br/>Soy <span>Daniel Giraldo</span></h2>
                     <p>Ingeniero electronico de la universidad industrial de santander, apasionado por el desarrollo de sofware y Internet de las cosas</p>
-                    <a href="/"> Know more</a>
+                    <a href="#about"> Know more</a>
                 </div>
                 <u className="sci">
-                    <li><a target="_blank" href="/"><img src={facebook} alt="" /></a></li>
-                    <li><a target="_blank" href="/"><img src={linkedin} alt="" /></a></li>
-                    <li><a target="_blank" href="/"><img src={git} alt="" /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/danielantonio.giraldoacosta/"><img src={facebook} alt="" /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-antonio-bobadilla-giraldo-6639aa17a/"><img src={linkedin} alt="" /></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/metallicano"><img src={git} alt="" /></a></li>
                 </u>
             </section>
         </HeroStyled>

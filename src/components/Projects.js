@@ -65,8 +65,8 @@ box-sizing: border-box;
 
 }
 
-.card-body h1{
-    
+.card-body h1 a{
+    color: white;
 }
 
 .contenido{
@@ -109,16 +109,18 @@ export default function Projects() {
     return (
         <ProjectsStyled id="projects">
             <div className="cabecera">
-            <h1>projects</h1>
-            <p>Estos son algunos de los proyectos que he realizado para mejorar mis habilidades en el desarollo web, todos mis proyectos se encuentran en <span><a href="/">mi github</a></span></p>
+                <h1>projects</h1>
+                <p>Estos son algunos de los proyectos que he realizado para mejorar mis habilidades en el desarollo web, todos mis proyectos se encuentran en <span><a target="_blank" rel="noopener noreferrer" href="https://github.com/metallicano">mi github</a></span></p>
             </div>
             <div className="project">
                 <div className="card">
                     <div className="card-header">
-                        <img src={github} alt="" />
+                        <a target="_blank" rel="noopener noreferrer" href="https://githubclonedanielgiraldo.netlify.app/">
+                            <img src={github} alt="" />
+                        </a>
                     </div>
                     <div className="card-body">
-                        <h1>Github Clone</h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://githubclonedanielgiraldo.netlify.app/">Github clone</a></h1>
                         <div className="contenido">
                             <p>Este proyecto te permite buscar los repositorios de codigo de los usuarios de github, consumiendo su api</p>
                         </div>
@@ -126,16 +128,18 @@ export default function Projects() {
                             <div className="icon"><img src={js} alt="" /> </div>
                             <div className="icon"><img src={bootstrap} alt="" /></div>
                             <div className="icon"><img src={html} alt="" /></div>
-                            
+
                         </div>
                     </div>
                 </div>
                 <div className="card">
-                <div className="card-header">
+                    <div className="card-header">
+                        <a target="_blank" rel="noopener noreferrer" href="https://pokedexdanielgiraldo.netlify.app/">
                         <img src={pokemon} alt="" />
+                        </a>
                     </div>
                     <div className="card-body">
-                        <h1>Pokedex</h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://pokedexdanielgiraldo.netlify.app/">Pokedex</a></h1>
                         <div className="contenido">
                             <p>Esta applicacion te permite buscar cualquier pokemon y obtener informacion de sus estadisicas base, gracias a la PokeApi</p>
                         </div>
@@ -149,10 +153,12 @@ export default function Projects() {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <img src={books} alt="" />
+                        <a target="_blank" rel="noopener noreferrer" href="https://javascript-fullstack-daniel.herokuapp.com/">
+                            <img src={books} alt="" />
+                        </a>
                     </div>
                     <div className="card-body">
-                        <h1>Books App</h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://javascript-fullstack-daniel.herokuapp.com/">Books App</a></h1>
                         <div className="contenido">
                             <p>Aplicaion full stack de javascript que te permite guardar tus libros favoritos en una base de datos</p>
                         </div>
@@ -167,10 +173,12 @@ export default function Projects() {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <img src={weather} alt="" />
+                        <a target="_blank" rel="noopener noreferrer" href="https://metallicano.github.io/-weather-grafics-app-react.js/">
+                            <img src={weather} alt="" />
+                        </a>
                     </div>
                     <div className="card-body">
-                        <h1>Weather App</h1>
+                        <h1><a target="_blank" rel="noopener noreferrer" href="https://metallicano.github.io/-weather-grafics-app-react.js/">weather App</a></h1>
                         <div className="contenido">
                             <p>Encuentra los datos climaticos de cualquier parte del mundo. Esta aplicacion te plasma los datos en una grafica realizada con chart.js que cambia en tiempo real, </p>
                         </div>
@@ -178,7 +186,7 @@ export default function Projects() {
                             <div className="icon"><img src={js} alt="" /> </div>
                             <div className="icon"><img src={bootstrap} alt="" /></div>
                             <div className="icon"><img src={react} alt="" /></div>
-                            
+
                         </div>
                     </div>
                 </div>

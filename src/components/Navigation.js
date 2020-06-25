@@ -66,7 +66,7 @@ export default function Navigation() {
         <NavigationStyled>
             <div className={banner === false ? "navigation" : "navigation navigation-active"}>
                 <ul>
-                    <li><a href="/">HOME</a></li>
+                    <li><a href="/" onClick={()=>dispatch(changeBanner())}>HOME</a></li>
                     <li><a href="#about" onClick={()=>dispatch(changeBanner())}>ABOUT</a></li>
                     <li><a href="#projects" onClick={()=>dispatch(changeBanner())}>PROJECTS</a></li>
                     <li><a href="#contact" onClick={()=>dispatch(changeBanner())}>CONTACT</a></li>
